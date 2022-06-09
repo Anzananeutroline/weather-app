@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.container{
+    position: relative;
+    margin-top: 2rem;
+    background: url("../../assets/dark.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 350px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Jost', sans-serif;
+    z-index: 1;
+}
+
+.input-field{
+    margin: 1.5rem 0;
+}
+
+.input{
+    width: 300px;
+    outline: none;
+    border: none;
+    padding: 10px 25px;
+  border: 1px solid #fff;
+    border-radius: 4px;
+ 
+}
+
+.info{
+    position: absolute;
+    bottom: 100px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.location .fa-solid{
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.location span{
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+.temperature{
+  
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+  
+
+#overlay {
+  position: absolute; /* Sit on top of the page content */
+ 
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.4); /* Black background with opacity */
+  z-index: -1; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+.error-message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+@media screen and (max-width:500px){
+    .container{
+        width: 300px;
+    }
+.input{
+    width: 280px;
+}
+}
